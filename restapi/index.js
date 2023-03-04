@@ -1,7 +1,9 @@
+require('dotenv').config()
 const express = require("express");
 const ProductsRouter=require('./Routes/Project')
 const userRouter=require('./Routes/User')
 
+console.log(process.env.DBPASSWORD)
 
 const server = express();
 server.use(express.json());
